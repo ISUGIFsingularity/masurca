@@ -57,12 +57,6 @@ wget https://fossies.org/linux/misc/bzip2-1.0.6.tar.gz
 popd
 
 
-#glib unreachable
-mkdir -p $SPACK_ROOT/mirror/glib
-pushd $SPACK_ROOT/mirror/glib
-wget https://fossies.org/linux/misc/glib-2.56.1.tar.xz
-#mv glib-2.56.1.tar.xz glib-2.56.1.tar.xz
-popd
 
 
 
