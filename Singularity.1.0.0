@@ -36,7 +36,8 @@ cd $SPACK_ROOT
 git pull
 
 # modify package to include latest verson
-awk '/ftp.genome.umd.edu/ { print; print "\n";printf "    version('3.2.8', '7e01fd95f7aefa270b67373ef8f1f8ce', url='https://github.com/alekseyzimin/masurca/releases/download/3.2.8/MaSuRCA-3.2.8.tar.gz')"; next }1' $SPACK_ROOT/var/spack/repos/builtin/packages/masurca/package.py > package.py
+awk '/ftp.genome.umd.edu/ { print; print "\n";printf "    version('\''3.2.8'\'', '\''7e01fd95f7aefa270b67373ef8f1f8ce'\'', url='\''https://github.com/alekseyzimin/masurca/releases/download/3.2.8/MaSuRCA-3.2.8.tar.gz'\'')"; next }1' spack/var/spack/repos/builtin/packages/masurca/package.py  > package.py
+
 mv package.py $SPACK_ROOT/var/spack/repos/builtin/packages/masurca/
 cd -
 
