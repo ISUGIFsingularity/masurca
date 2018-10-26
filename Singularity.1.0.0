@@ -63,6 +63,9 @@ popd
 
 spack install masurca@3.2.8
 
+#found a mistake in the $NUM_THREADS variable in this file, changing file to correct error prior to update. 
+perl  -i -pe 's/THREADSd8/THREADS/g' /opt/spack/opt/spack/linux-centos7-x86_64/gcc-4.8.5/masurca-3.2.8-hgdshdatclkrv7kct6kqgfb3fa536iji/bin/mega_reads_assemble_cluster.sh
+
 
 #for d in /opt/spack/opt/spack/linux-centos7-x86_64/gcc-4.8.5/*/bin; do export PATH="$PATH:$d"; done
 
