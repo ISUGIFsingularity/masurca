@@ -33,7 +33,7 @@ export PATH=$PATH:$masurcagit/wrappers
 Place the following into your .bashrc folder to use scripts without container (preferred method unless testing container functions)
 
 ```
-alias masurcagit=Path2thisRepo
+export masurcagit=Path2thisRepo
 export PATH=$PATH:$masurcagit/masurca
 ```
 
