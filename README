@@ -16,8 +16,8 @@ You can pull the singularity image using these commands
 cd masurca
 mkdir SIMG
 cd SIMG
-singularity pull shub://ISUGIFsingularity/masurca:1.0.1
-ln -s masurca_1.0.1.sif  ISUGIFsingularity-masurca-master.simg
+singularity pull shub://ISUGIFsingularity/masurca:3.2.9
+ln -s ISUGIFsingularity-masurca-master-3.2.9.simg  ISUGIFsingularity-masurca-master.simg
 ```
 
 ### Add Alias and PATH
@@ -25,7 +25,8 @@ ln -s masurca_1.0.1.sif  ISUGIFsingularity-masurca-master.simg
 Place the following into your .bashrc folder for container use
 
 ```
-alias masurcagit=Path2thisRepo
+#make sure you are in the masurca folder that corresponds to the Path2thisRepo
+export masurcagit=`pwd`
 export PATH=$PATH:$masurcagit/wrappers
 ```
 
